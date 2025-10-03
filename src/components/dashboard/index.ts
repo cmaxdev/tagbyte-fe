@@ -7,4 +7,5 @@ export { default as PricingSection } from './PricingSection';
 export { default as TestimonialsSection } from './TestimonialsSection';
 export { default as FAQSection } from './FAQSection';
 export { default as FooterSection } from './FooterSection';
+export { default as ContactWidget } from './ContactWidget';
 

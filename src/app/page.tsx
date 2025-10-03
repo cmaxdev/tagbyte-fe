@@ -8,7 +8,8 @@ import {
   PricingSection,
   TestimonialsSection,
   FAQSection,
-  FooterSection
+  FooterSection,
+  ContactWidget
 } from '@/components/dashboard';
 
 export default function Home() {
@@ -42,6 +43,9 @@ export default function Home() {
 
       {/* Footer */}
       <FooterSection />
+      
+      {/* Contact Widget - Fixed at bottom right */}
+      <ContactWidget />
     </div>
   );
 }

@@ -30,17 +30,11 @@ export default function HeroSection() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="tel:0722XXXXXX"
-              className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
-            >
+            <a href="tel:0722XXXXXX" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1">
               <PhoneIcon className="w-[29px] h-[26px]" />
               0722 XXX XXX
             </a>
-            <a
-              href="#cerere-oferta"
-              className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
-            > 
+            <a href="#cerere-oferta" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"> 
               <EmailIcon className="w-[23px] h-[22px]" />
               Cerere Ofertă
             </a>
