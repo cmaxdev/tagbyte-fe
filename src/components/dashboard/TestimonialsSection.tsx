@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
           
           {/* Client Logos */}
           <div className="grid grid-cols-2 lg:flex lg:flex-row w-full h-fit lg:h-24">
-            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:rounded-bl-none p-2">
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:rounded-bl-3xl p-2">
               <LitIconSm className="max-w-[121px] w-full" />
             </div>
 
@@ -58,11 +58,11 @@ export default function TestimonialsSection() {
               <NimIconSm className="max-w-[144px] w-full" />
             </div>
 
-            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-bl-3xl lg:rounded-bl-none lg:border-l-0 p-2">
               <MorningIconSm className="max-w-[47px] w-full" />
             </div>
 
-            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-br-3xl lg:rounded-br-none lg:border-l-0 p-2">
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-br-3xl lg:border-l-0 p-2">
               <CakeIconSm className="max-w-[35px] w-full" />
             </div>
           </div>
