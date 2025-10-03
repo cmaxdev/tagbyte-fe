@@ -32,7 +32,7 @@ export default function ServicesSection() {
             <BrandingIcon className="w-[24px] h-[25px]" />
             <p className="text-base font-normal text-black font-Inter">Branding</p>
           </div>
-          <Image src="/images/services/branding.png" alt="Branding" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[175px]" width={175} height={134} />
+          <Image src="/images/services/branding.png" alt="Branding" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[175px]" width={175} height={134} style={{width: "auto", height: "auto"}} />
         </div>
 
         <div className="max-w-[300px] h-[180px] relative mx-auto w-full">
@@ -40,7 +40,7 @@ export default function ServicesSection() {
             <WebsiteIcon className="w-[24px] h-[25px]" />
             <p className="text-base font-normal text-black font-Inter">Website-uri</p>
           </div>
-          <Image src="/images/services/website.png" alt="Website" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[197px]" width={197} height={118} />
+          <Image src="/images/services/website.png" alt="Website" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[197px]" width={197} height={118} style={{width: "auto", height: "auto"}} />
         </div>
 
         <div className="max-w-[300px] h-[180px] relative mx-auto w-full">
@@ -48,7 +48,7 @@ export default function ServicesSection() {
             <MobileIcon className="w-[24px] h-[25px]" />
             <p className="text-base font-normal text-black font-Inter">Aplicații mobile</p>
           </div>
-          <Image src="/images/services/mobile.png" alt="Mobile" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[148px]" width={148} height={130} />
+          <Image src="/images/services/mobile.png" alt="Mobile" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[148px]" width={148} height={130} style={{width: "auto", height: "auto"}} />
         </div>
 
         <div className="max-w-[300px] h-[180px] relative mx-auto w-full">
@@ -56,7 +56,7 @@ export default function ServicesSection() {
             <SoftwareIcon className="w-[24px] h-[25px]" />
             <p className="text-base font-normal text-black font-Inter">Software custom</p>
           </div>
-          <Image src="/images/services/software.png" alt="Software" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[198px]" width={198} height={104} />
+          <Image src="/images/services/software.png" alt="Software" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[198px]" width={198} height={104} style={{width: "auto", height: "auto"}} />
         </div>
 
         <div className="max-w-[300px] h-[180px] relative mx-auto w-full">
@@ -64,7 +64,7 @@ export default function ServicesSection() {
             <VideoIcon className="w-[24px] h-[25px]" />
             <p className="text-base font-normal text-black font-Inter">Video promo</p>
           </div>
-          <Image src="/images/services/branding.png" alt="Video" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[175px]" width={175} height={134} />
+          <Image src="/images/services/branding.png" alt="Video" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[175px]" width={175} height={134} style={{width: "auto", height: "auto"}} />
         </div>
 
         <div className="max-w-[300px] h-[180px] relative mx-auto w-full">
@@ -72,7 +72,7 @@ export default function ServicesSection() {
             <DesignIcon className="w-[24px] h-[25px]" />
             <p className="text-base font-normal text-black font-Inter">Web design</p>
           </div>
-          <Image src="/images/services/web-design.png" alt="Web Design" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[208px]" width={208} height={106} />
+          <Image src="/images/services/web-design.png" alt="Web Design" className="absolute right-0 top-[-30px] w-auto h-auto max-w-[208px]" width={208} height={106} style={{width: "auto", height: "auto"}} />
         </div>
 
       </div>

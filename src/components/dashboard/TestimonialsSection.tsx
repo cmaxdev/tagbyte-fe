@@ -22,13 +22,13 @@ export default function TestimonialsSection() {
         </p>
       </div>
       
-      <div className="flex flex-col lg:flex-row gap-8 items-start justify-center relative">
+      <div className="flex flex-col lg:flex-row gap-8 items-start justify-center relative px-4 lg:px-0">
         {/* Main Testimonial */}
-        <div className="flex-1 max-w-[920px] w-full h-auto lg:h-[486px] bg-[#FAFAFA] relative rounded-3xl border overflow-hidden">  
+        <div className="flex-1 max-w-[920px] w-full h-auto lg:h-[486px] bg-[#FAFAFA] relative rounded-3xl border">  
           <div className="rounded-2xl p-4 sm:p-6 lg:p-8 relative h-auto lg:h-[390px] flex flex-col justify-center items-center">
             {/* Logo */}
             <div className="flex items-center justify-center gap-3 mb-4 lg:mb-6">
-              <LitIcon className="w-auto h-8 lg:h-auto" />
+              <LitIcon className="w-full" />
             </div>
             
             {/* Testimonial Text */}
@@ -49,25 +49,25 @@ export default function TestimonialsSection() {
           </div>
           
           {/* Client Logos */}
-          <div className="grid grid-cols-2 lg:flex lg:flex-row w-full h-20 lg:h-24">
-            <div className="h-full flex items-center justify-center bg-[#f5f5f5] border rounded-bl-3xl lg:rounded-bl-none p-2">
-              <LitIconSm className="w-full h-full max-w-[60px] max-h-[40px] lg:max-w-[80px] lg:max-h-[50px]" />
+          <div className="grid grid-cols-2 lg:flex lg:flex-row w-full h-fit lg:h-24">
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:rounded-bl-none p-2">
+              <LitIconSm className="max-w-[121px] w-full" />
             </div>
 
-            <div className="h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
-              <NimIconSm className="w-full h-full max-w-[60px] max-h-[40px] lg:max-w-[80px] lg:max-h-[50px]" />
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
+              <NimIconSm className="max-w-[144px] w-full" />
             </div>
 
-            <div className="h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
-              <MorningIconSm className="w-full h-full max-w-[60px] max-h-[40px] lg:max-w-[80px] lg:max-h-[50px]" />
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
+              <MorningIconSm className="max-w-[47px] w-full" />
             </div>
 
-            <div className="h-full flex items-center justify-center bg-[#f5f5f5] border rounded-br-3xl lg:rounded-br-none lg:border-l-0 p-2">
-              <CakeIconSm className="w-full h-full max-w-[60px] max-h-[40px] lg:max-w-[80px] lg:max-h-[50px]" />
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-br-3xl lg:rounded-br-none lg:border-l-0 p-2">
+              <CakeIconSm className="max-w-[35px] w-full" />
             </div>
           </div>
 
-          <StarCheckIcon className="absolute top-[-30px] right-[-30px] lg:top-[-60px] lg:right-[-115px] w-12 h-12 lg:w-auto lg:h-auto" />
+          <StarCheckIcon className="hidden lg:block absolute top-[-30px] right-[-30px] lg:top-[-60px] lg:right-[-115px] w-12 h-12 lg:w-auto lg:h-auto" />
         </div>
       </div>
     </section>
