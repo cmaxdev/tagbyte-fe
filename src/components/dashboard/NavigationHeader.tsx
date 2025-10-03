@@ -10,7 +10,7 @@ import PortfolioIcon from '/public/icons/dashboard/header/portfolio.svg';
 export default function NavigationHeader() {
 
   return (
-    <header className="mb-8 relative">
+    <header className="mb-8 relative flex justify-center">
       {/* Debug info - remove this in production */}
       <div className="rounded-full h-[48px] px-2 sm:px-4 flex items-center md:justify-start justify-between gap-2 sm:gap-4">
         {/* Left Part - Logo */}

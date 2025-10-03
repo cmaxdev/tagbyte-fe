@@ -7,8 +7,8 @@ import FolderIcon from '/public/icons/dashboard/hero/folder.svg';
 
 export default function HeroSection() {
   return (
-    <section className="py-16 lg:py-24">
-      <div className="flex gap-12 items-center">
+    <section className="py-16 lg:py-24 flex">
+      <div className="flex gap-12 items-center mx-auto">
         {/* Left Content */}
         <div className="space-y-8">
           <div className="space-y-6">
