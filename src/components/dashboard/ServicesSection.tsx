@@ -77,7 +77,6 @@ export default function ServicesSection() {
 
       </div>
       
-      {/* CTA Button */}
       <div className="w-full flex justify-center">
         <a
           href="#cerere-oferta"
