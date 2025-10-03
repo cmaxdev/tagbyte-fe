@@ -46,6 +46,16 @@ export default function FAQSection() {
       <div className="w-full flex justify-center">
         <a
           href="#cerere-oferta"
+          onClick={(e) => {
+            e.preventDefault();
+            const element = document.getElementById('cerere-oferta');
+            if (element) {
+              element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }
+          }}
           className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
         > 
           <EmailIcon className="w-[23px] h-[22px]" />

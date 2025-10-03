@@ -5,8 +5,17 @@ import PhoneIcon from '/public/icons/dashboard/hero/phone.svg';
 
 import WhatsappIcon from '/public/icons/whatsapp.svg';
 
-
 export default function ContactWidget() {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <div className="fixed bottom-6 right-6 z-50 space-y-3 flex flex-col items-end">
       {/* WhatsApp */}
@@ -27,7 +36,7 @@ export default function ContactWidget() {
         0722 XXX XXX
       </a>
       
-      <a href="#cerere-oferta" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"> 
+      <a href="#cerere-oferta" onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')} className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"> 
         <EmailIcon className="w-[23px] h-[22px]" />
         Cerere Ofertă
       </a>

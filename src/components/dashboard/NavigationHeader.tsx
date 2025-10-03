@@ -8,6 +8,16 @@ import ConnectIcon from '/public/icons/dashboard/header/connect.svg';
 import PortfolioIcon from '/public/icons/dashboard/header/portfolio.svg';
 
 export default function NavigationHeader() {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
 
   return (
     <header className="mb-8 relative flex justify-center">
@@ -22,17 +32,17 @@ export default function NavigationHeader() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-4 justify-center rounded-full h-full px-6 w-[552px] max-h-10" style={{ background: 'linear-gradient(to bottom, #3D3D3DB3 0%, #3D3D3DB3 30%, #808080B3 70%, #808080B3 100%)' }}>
-          <a href="#servicii" className="flex items-center gap-1.5 text-white hover:text-gray-200 transition-colors">
+          <a href="#servicii" onClick={(e) => handleSmoothScroll(e, 'servicii')} className="flex items-center gap-1.5 text-white hover:text-gray-200 transition-colors">
             <ServiceIcon className="w-4 h-4" />
             <span className="text-sm font-semibold">Servicii</span>
           </a>
 
-          <a href="#cum-lucram" className="flex items-center gap-1.5 text-white hover:text-gray-200 transition-colors">
+          <a href="#cum-lucram" onClick={(e) => handleSmoothScroll(e, 'cum-lucram')} className="flex items-center gap-1.5 text-white hover:text-gray-200 transition-colors">
             <ConnectIcon className="w-4 h-4" />
             <span className="text-sm font-semibold">Cum lucrăm?</span>
           </a>
 
-          <a href="#portofoliu" className="flex items-center gap-1.5 text-white hover:text-gray-200 transition-colors">
+          <a href="#portofoliu" onClick={(e) => handleSmoothScroll(e, 'portofoliu')} className="flex items-center gap-1.5 text-white hover:text-gray-200 transition-colors">
             <PortfolioIcon className="w-4 h-4" />
             <span className="text-sm font-semibold">Portofoliu</span>
           </a>
@@ -60,6 +70,7 @@ export default function NavigationHeader() {
           {/* Desktop CTA Button */}
           <a
             href="#cerere-oferta"
+            onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')}
             className="hidden sm:flex bg-[#000000] text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 rounded-full items-center gap-1.5 transition-colors font-semibold h-8"
           >
             <div className="w-[22px] h-[22px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>
@@ -71,6 +82,7 @@ export default function NavigationHeader() {
           {/* Mobile CTA Button */}
           <a
             href="#cerere-oferta"
+            onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')}
             className="sm:hidden bg-[#000000] text-white text-xs px-2 py-1 rounded-full flex items-center gap-1 transition-colors font-semibold h-8"
           >
             <div className="w-[18px] h-[18px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>
