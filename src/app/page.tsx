@@ -43,7 +43,7 @@ export default function Home() {
         <FAQSection />
 
         {/* Contact Form Section */}
-        <section id="cerere-oferta" className="py-16 lg:py-24">
+        {/* <section id="cerere-oferta" className="py-16 lg:py-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">
               <span className="text-gray-900">CERE</span>
@@ -116,7 +116,7 @@ export default function Home() {
               </button>
             </form>
           </div>
-        </section>
+        </section> */}
       </div>
 
       {/* Footer */}
