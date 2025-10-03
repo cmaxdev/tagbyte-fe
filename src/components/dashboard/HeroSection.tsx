@@ -32,14 +32,14 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="tel:0722XXXXXX"
-              className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-0.5"
+              className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
             >
               <PhoneIcon className="w-[29px] h-[26px]" />
               0722 XXX XXX
             </a>
             <a
               href="#cerere-oferta"
-              className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-0.5"
+              className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
             > 
               <EmailIcon className="w-[23px] h-[22px]" />
               Cerere Ofertă
@@ -51,9 +51,7 @@ export default function HeroSection() {
         <div className="w-[336px] h-[231px] relative flex items-center justify-center mt-8">
             <div className="w-[326px] h-[221px] bg-black rounded-[20px] relative">
                 <div className="relative w-full h-full">
-                    <Image src="/images/dashboard/Ed-tech.png" alt="Phone" className="absolute bottom-[80px] right-0" width={161} height={188} />
-                    <Image src="/images/dashboard/Crypto.png" alt="Phone" className="absolute bottom-[40px] right-[90px]" width={162} height={237} />
-                    <Image src="/images/dashboard/Phone.png" alt="Phone" className="absolute bottom-[30px]" width={152} height={253} />
+                    <Image src="/images/dashboard/image.png" alt="Phone" className="absolute bottom-[30px]" width={322} height={242} />
                 </div>
             </div>
             <div className="w-[326px] h-[175px] bg-[#FFFFFFE6] rounded-[18px] absolute bottom-[5px] left-[5px] flex items-center justify-center flex-col gap-[30px]" style={{boxShadow: '2px 0px 10px 8px rgba(0, 0, 0, 0.3)'}}>
