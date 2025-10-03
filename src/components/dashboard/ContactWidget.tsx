@@ -11,7 +11,7 @@ export default function ContactWidget() {
     <div className="fixed bottom-6 right-6 z-50 space-y-3 flex flex-col items-end">
       {/* WhatsApp */}
       <div className="cursor-pointer flex flex-row justify-center items-center gap-1">
-        <span className="font-semibold text-sm text-black shadow-[inset_0px_0px_10px_0px_#28DD43] rounded-full p-2">Scrie-ne pe WhatsApp</span>
+        <span className="font-semibold text-sm text-black shadow-[inset_0px_0px_10px_0px_#28DD43] rounded-full p-2 bg-white">Scrie-ne pe WhatsApp</span>
         <div className="relative">
           <div className="w-12 h-12 overflow-hidden">
             <WhatsappIcon className="absolute top-[-12px] left-[-12px]" />
