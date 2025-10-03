@@ -14,7 +14,8 @@ export default function FAQSection() {
             <FaqIcon />
           </span>
           <span className="text-gray-900">ÎNTREBĂRI ȘI</span>
-          <span className="bg-[linear-gradient(to_bottom,#588AFF_0%,#C2E0FF_60%)] bg-clip-text text-transparent"> RĂSPUNSURI</span>
+          &nbsp;
+          <span className="bg-[linear-gradient(to_right,#588AFF_0%,#C2E0FF_100%)] bg-clip-text text-transparent"> RĂSPUNSURI</span>
         </h2>
       </div>
       
