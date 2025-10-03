@@ -1,18 +1,24 @@
 import React from 'react';
 
+import EmailIcon from "/public/icons/dashboard/hero/email.svg"
+import FaqIcon from '/public/icons/dashboard/faq/thinking.svg';
+
+
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-16 lg:py-24">
-      <div className="text-center mb-16">
-        <p className="text-sm uppercase tracking-wider text-gray-500 mb-2">AI NEVOIE DE RĂSPUNSURI?</p>
-        <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-          <span className="text-2xl mr-2">🤔</span>
+    <section id="faq" className="py-8 lg:py-12">
+      <div className="text-left mb-4 gap-[9xp] flex flex-col">
+        <p className="text-sm font-semibold italic text-[#171E29] text-left leading-relaxed opacity-70">AI NEVOIE DE RĂSPUNSURI?</p>
+        <h2 className="text-4xl lg:text-5xl font-bold mb-4 flex items-center p-[5px]">
+          <span className="text-2xl mr-2">
+            <FaqIcon />
+          </span>
           <span className="text-gray-900">ÎNTREBĂRI ȘI</span>
-          <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> RĂSPUNSURI</span>
+          <span className="bg-[linear-gradient(to_bottom,#588AFF_0%,#C2E0FF_60%)] bg-clip-text text-transparent"> RĂSPUNSURI</span>
         </h2>
       </div>
       
-      <div className="max-w-3xl mx-auto space-y-4 mb-12">
+      <div className="w-full space-y-[10px] mb-12">
         {[
           "What happens if my project scope changes mid-way?",
           "Can you collaborate with our in-house team?",
@@ -25,26 +31,23 @@ export default function FAQSection() {
           "How do you communicate and manage work?",
           "How soon can you start?"
         ].map((question, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-sm p-4 flex items-center justify-between hover:shadow-md transition-shadow cursor-pointer">
-            <span className="text-gray-900 font-medium">{question}</span>
-            <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-              <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          <div key={index} className="bg-white rounded-lg shadow-sm h-14 hover:shadow-md transition-shadow cursor-pointer flex gap-3 items-center">
+            <div className="w-10 h-10 flex items-center justify-center">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.79086 6.83079H15.7909V9.37625H0.79086V6.83079ZM7.01813 0.603521H9.56359V15.6035H7.01813V0.603521Z" fill="#FF4400"/>
               </svg>
             </div>
+            <span className="text-gray-900 font-medium">{question}</span>
           </div>
         ))}
       </div>
       
-      {/* CTA Button */}
-      <div className="text-center">
+      <div className="w-full flex justify-center">
         <a
           href="#cerere-oferta"
-          className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
-        >
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
+          className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
+        > 
+          <EmailIcon className="w-[23px] h-[22px]" />
           Cerere Ofertă
         </a>
       </div>

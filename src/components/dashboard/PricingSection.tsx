@@ -116,8 +116,8 @@ export default function PricingSection() {
                 </div>
                 <div className="flex items-center gap-1 mb-2">
                   {[...Array(5)].map((_, i) => (
-                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9547 1.17207C10.6015 0.322851 9.39852 0.322851 9.04531 1.17207L7.03144 6.01402L1.80415 6.43309C0.887349 6.50659 0.515604 7.65071 1.2141 8.24905L5.19674 11.6606L3.97999 16.7616C3.76658 17.6562 4.73984 18.3633 5.52474 17.8839L10 15.1504L14.4754 17.8839C15.2602 18.3633 16.2335 17.6562 16.0201 16.7616L14.8033 11.6606L18.7859 8.24905C19.4844 7.65071 19.1127 6.50659 18.1959 6.43309L12.9686 6.01402L10.9547 1.17207Z" fill="black"/>
+                    <svg key={i} width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M10.9547 1.17207C10.6015 0.322851 9.39852 0.322851 9.04531 1.17207L7.03144 6.01402L1.80415 6.43309C0.887349 6.50659 0.515604 7.65071 1.2141 8.24905L5.19674 11.6606L3.97999 16.7616C3.76658 17.6562 4.73984 18.3633 5.52474 17.8839L10 15.1504L14.4754 17.8839C15.2602 18.3633 16.2335 17.6562 16.0201 16.7616L14.8033 11.6606L18.7859 8.24905C19.4844 7.65071 19.1127 6.50659 18.1959 6.43309L12.9686 6.01402L10.9547 1.17207Z" fill="black"/>
                     </svg>
                   ))}
                 </div>
@@ -245,7 +245,7 @@ export default function PricingSection() {
               "Suport dedicat pe termen lung",
               "Re-design & scalare ulterioară"
             ].map((feature, index) => (
-              <div key={index} className="flex items-center gap-2">
+              <div key={`feature_${index}`} className="flex items-center gap-2">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.75661 14.0596L0.321533 7.62452L2.3 5.64628L6.75661 10.1029L16.3386 0.520996L18.317 2.4992L6.75661 14.0596Z" fill="white"/>
                 </svg>
