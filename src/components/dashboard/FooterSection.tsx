@@ -13,7 +13,7 @@ export default function FooterSection() {
           <div className="space-y-4 text-center lg:text-left flex flex-col justify-center">
             <div className="flex items-center justify-center lg:justify-start gap-3 overflow-hidden">
               <LogoIcon className="min-w-[50px] h-[50px]" />
-              <div className="overflow-hidden flex">
+              <div className="overflow-hidden flex w-[200px]">
                 <span className="bg-gradient-to-r from-[#588AFF]/80 to-white/80 bg-clip-text text-transparent min-w-[519px] w-full text-[38.59px] font-extrabold font-inter text-left">TAGBYTE</span>
               </div>
             </div>
