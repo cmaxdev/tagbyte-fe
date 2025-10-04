@@ -55,15 +55,17 @@ export default function TestimonialsSection() {
               <LitIconSm className="max-w-[121px] w-full" />
             </div>
 
-            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
-              <NimIconSm className="max-w-[144px] w-full" />
+            <div className="w-full h-full pr-4 pb-[8.68px]">
+              <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border lg:border-l-0 p-2">
+                <NimIconSm className="max-w-[144px] w-full" />
+              </div>
             </div>
 
             <div className="w-full h-full flex items-center justify-center bg-white border rounded-bl-3xl lg:rounded-bl-none lg:border-l-0 p-2">
               <MorningIconSm className="max-w-[47px] w-full" />
             </div>
 
-            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-br-3xl lg:border-l-0 p-2">
+            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-br-3xl lg:border-l-0 p-2" style={{ borderTopStyle: 'dashed' }}>
               <CakeIconSm className="max-w-[35px] w-full" />
             </div>
           </div>

@@ -157,7 +157,7 @@ export default function PricingSection() {
         </div>
         
         {/* Website Custom Card */}
-        <div className="bg-black rounded-[30px] p-4 sm:p-6 lg:p-[34px] h-full flex flex-col justify-between pb-5 relative text-white">
+        <div className="bg-black rounded-[30px] p-4 sm:p-6 lg:p-[34px] h-full flex flex-col justify-between pb-5 relative text-white bg-[radial-gradient(circle_250px_at_calc(100%-50px)_50px,white,transparent)]">
           <div className="w-full flex flex-col gap-4 sm:gap-[18px] mb-6 sm:mb-[44px]">
             <div className="flex flex-col items-center gap-2.5">
               <div className="w-full flex items-center gap-1.5">
