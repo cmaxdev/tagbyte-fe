@@ -6,20 +6,20 @@ import FaqIcon from '/public/icons/dashboard/faq/thinking.svg';
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-8 lg:py-12">
-      <div className="text-center lg:text-left mb-4 gap-[9px] flex flex-col">
-        <p className="text-sm font-semibold italic text-[#171E29] leading-relaxed opacity-70 px-4">AI NEVOIE DE RĂSPUNSURI?</p>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 flex items-center justify-center lg:justify-start p-[5px]">
-          <span className="text-xl lg:text-2xl mr-0 lg:mr-2 mb-2 lg:mb-0">
-            <FaqIcon />
-          </span>
-          <span className="text-gray-900">ÎNTREBĂRI ȘI</span>
-          &nbsp;
-          <span className="bg-[linear-gradient(to_right,#588AFF_0%,#C2E0FF_100%)] bg-clip-text text-transparent"> RĂSPUNSURI</span>
-        </h2>
+    <section id="faq" className="my-8 lg:mt-[140px] lg:mb-6 px-4">
+      <div className="text-center lg:text-left mb-6 gap-[9px] flex flex-col">
+        <p className="text-[#1D2633] font-medium italic font-jetbrains-mono text-[11px] leading-3 tracking-normal">AI NEVOIE DE RĂSPUNSURI?</p>
+        <div className="flex items-center justify-start">
+          <FaqIcon />
+          <h2 className="max-w-[519px] w-full bg-gradient-to-r from-[#588AFF] from-[76%] to-white to-[100%] bg-clip-text text-transparent text-[38.59px] font-extrabold font-inter leading-12 tracking-[-0.6px]">
+            <span className="text-[#292D36]">ÎNTREBĂRI ȘI</span>
+            &nbsp;
+            <span> RĂSPUNSURI</span>
+          </h2>
+        </div>
       </div>
       
-      <div className="w-full space-y-[10px] mb-12 px-4">
+      <div className="w-full space-y-[10px] mb-8">
         {[
           "What happens if my project scope changes mid-way?",
           "Can you collaborate with our in-house team?",
@@ -38,7 +38,7 @@ export default function FAQSection() {
                 <path d="M0.79086 6.83079H15.7909V9.37625H0.79086V6.83079ZM7.01813 0.603521H9.56359V15.6035H7.01813V0.603521Z" fill="#FF4400"/>
               </svg>
             </div>
-            <span className="text-gray-900 font-medium text-sm lg:text-base leading-tight">{question}</span>
+            <span className="font-inter font-medium text-base leading-4 tracking-[-0.16px] text-[#2E323D]">{question}</span>
           </div>
         ))}
       </div>
@@ -56,7 +56,7 @@ export default function FAQSection() {
               });
             }
           }}
-          className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
+          className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold font-inter text-[15px] flex items-center justify-center gap-1"
         > 
           <EmailIcon className="w-[23px] h-[22px]" />
           Cerere Ofertă

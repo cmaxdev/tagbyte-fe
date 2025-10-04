@@ -20,12 +20,12 @@ export default function NavigationHeader() {
   };
 
   return (
-    <header className="mb-8 relative flex justify-center">
+    <header className="mb-8 relative flex justify-start">
       {/* Debug info - remove this in production */}
-      <div className="rounded-full h-[48px] px-2 sm:px-4 flex items-center md:justify-start justify-between gap-2 sm:gap-4">
+      <div className="rounded-full h-[48px] px-2 lg:px-0 flex items-center justify-start gap-1 sm:gap-4">
         {/* Left Part - Logo */}
-        <div className="flex items-center w-12 h-12 flex-shrink-0">
-          <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+        <div className="flex items-center w-8 h-8 flex-shrink-0">
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center">
             <StripeIcon className="w-[48px] h-[48px] text-gray-800" style={{ width: '48px', height: '48px' }} />
           </div>
         </div>
@@ -34,19 +34,19 @@ export default function NavigationHeader() {
         <nav className="hidden lg:flex items-center gap-4 justify-center rounded-full h-full px-6 w-[552px] max-h-10" style={{ background: 'linear-gradient(to bottom, #3D3D3DB3 0%, #3D3D3DB3 30%, #808080B3 70%, #808080B3 100%)' }}>
           <a href="#servicii" onClick={(e) => handleSmoothScroll(e, 'servicii')} className="flex items-center gap-1.5 text-white hover:text-gray-200 hover:opacity-80 transition-all duration-300 relative group">
             <ServiceIcon className="w-4 h-4" />
-            <span className="text-sm font-semibold">Servicii</span>
+            <span className="font-inter font-semibold" style={{ fontSize: '13.23px' }}>Servicii</span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
           </a>
 
           <a href="#cum-lucram" onClick={(e) => handleSmoothScroll(e, 'cum-lucram')} className="flex items-center gap-1.5 text-white hover:text-gray-200 hover:opacity-80 transition-all duration-300 relative group">
             <ConnectIcon className="w-4 h-4" />
-            <span className="text-sm font-semibold">Cum lucrăm?</span>
+            <span className="font-inter font-semibold" style={{ fontSize: '13.23px' }}>Cum lucrăm?</span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
           </a>
 
           <a href="#portofoliu" onClick={(e) => handleSmoothScroll(e, 'portofoliu')} className="flex items-center gap-1.5 text-white hover:text-gray-200 hover:opacity-80 transition-all duration-300 relative group">
             <PortfolioIcon className="w-4 h-4" />
-            <span className="text-sm font-semibold">Portofoliu</span>
+            <span className="font-inter font-semibold" style={{ fontSize: '13.23px' }}>Portofoliu</span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
           </a>
 
@@ -54,7 +54,7 @@ export default function NavigationHeader() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span className="text-sm font-semibold">Sună-ne: 0722 XXX XXX</span>
+            <span className="font-inter font-semibold" style={{ fontSize: '13.23px' }}>Sună-ne: 0722 XXX XXX</span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
           </a>
         </nav>
@@ -65,7 +65,7 @@ export default function NavigationHeader() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span className="text-sm font-semibold">Sună-ne: 0722 XXX XXX</span>
+            <span className="text-sm font-semibold" style={{ fontSize: '13.23px' }}>Sună-ne: 0722 XXX XXX</span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-800 transition-all duration-300 group-hover:w-full"></div>
           </a>
         </div>
@@ -81,7 +81,7 @@ export default function NavigationHeader() {
             <div className="w-[22px] h-[22px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>
               <MailIcon className="w-[20px] h-[12px] text-white" />
             </div>
-            <span className="hidden md:inline">Cerere Ofertă</span>
+            <span className="hidden md:inline font-inter font-semibold text-[15px]">Cerere Ofertă</span>
           </a>
 
           {/* Mobile CTA Button */}

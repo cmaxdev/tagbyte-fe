@@ -7,34 +7,43 @@ import FolderIcon from '/public/icons/dashboard/hero/folder.svg';
 
 export default function HeroSection() {
   return (
-    <section className="py-8 md:py-16 lg:py-24">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center mx-auto">
+    <section className="py-8 md:py-16 lg:py-21">
+      <div className="flex flex-col lg:flex-row gap-20 lg:gap-12 items-center lg:items-end mx-auto">
         {/* Left Content */}
         <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
-          <div className="space-y-4 lg:space-y-6">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[41px] font-extrabold leading-tight">
-              <span className="text-gray-900">CONSTRUIM</span>
+          <div className="space-y-8 lg:space-y-0">
+            {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[41px] font-extrabold leading-tight">
+              <span className="text-black font-inter font-extrabold text-[42px] leading-[48.3px]">CONSTRUIM</span>
               <br />
-              <span className="text-gray-900">EXPERIENȚE</span>
+              <span className="text-black font-inter font-extrabold text-[42px] leading-[48.3px]">EXPERIENȚE</span>
               <br />
-              <span className="bg-[linear-gradient(to_bottom,#588AFF_0%,#C2E0FF_60%)] bg-clip-text text-transparent">DIGITALE</span>
+              <span className="bg-gradient-to-b from-[#588AFF]/90 from-[64%] to-white/60 to-[100%] bg-clip-text text-transparent font-inter font-extrabold text-[42px] leading-[48.3px]">DIGITALE</span>
               &nbsp;
-              <span className="text-gray-900">CARE</span>
+              <span className="text-black font-inter font-extrabold text-[42px] leading-[48.3px]">CARE</span>
               &nbsp;
-              <span className="bg-[linear-gradient(to_bottom,#588AFF_0%,#C2E0FF_60%)] bg-clip-text text-transparent">VÂND</span>
+              <span className="bg-gradient-to-b from-[#588AFF] from-[57%] to-white/60 to-[100%] bg-clip-text text-transparent font-inter font-extrabold text-[42px] leading-[48.3px]">VÂ ND</span>
+            </h1> */}
+            <h1 className="min-h-[196px] text-[42px] font-extrabold font-inter leading-[48.3px] tracking-[-0.4px] flex flex-col justify-center items-start bg-gradient-to-b from-[#588AFF] from-[57%] to-white/60 to-[100%] bg-clip-text text-transparent">
+              <span className="text-black">CONSTRUIM</span>
+              <span className="text-black">EXPERIENȚE</span>
+              <div className="flex flex-col lg:flex-row justify-start items-start lg:gap-4">
+                DIGITALE
+                <span className="text-black">CARE</span>
+                VÂ ND
+              </div>
             </h1>
-            <p className="text-sm font-semibold italic text-[#171E29] leading-relaxed max-w-80 mx-auto lg:mx-0 opacity-70">
+            <p className="text-[13.83px] font-semibold italic text-[#171E29] leading-relaxed max-w-[350px] mx-auto lg:mx-0 opacity-70 font-inter">
               Web design, software și branding pentru afaceri care vor să crească
             </p>
           </div>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="tel:0722XXXXXX" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1 mx-auto sm:mx-0">
+          <div className="flex flex-row gap-4 justify-center lg:justify-start">
+            <a href="tel:0722XXXXXX" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold font-inter text-[13.23px] flex items-center justify-center gap-1 mx-auto sm:mx-0">
               <PhoneIcon className="w-[29px] h-[26px]" />
               0722 XXX XXX
             </a>
-            <a href="#cerere-oferta" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1 mx-auto sm:mx-0"> 
+            <a href="#cerere-oferta" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold font-inter text-[15px] flex items-center justify-center gap-1"> 
               <EmailIcon className="w-[23px] h-[22px]" />
               Cerere Ofertă
             </a>
@@ -58,7 +67,7 @@ export default function HeroSection() {
                     <div className="bg-white w-[29px] h-[27px] rounded-full flex items-center justify-center">
                         <FolderIcon className="w-[17px] h-[17px]" />
                     </div>
-                    <span className="text-white text-sm font-semibold">Portofoliu</span>
+                    <span className="text-white text-[13.23px] font-semibold font-inter">Portofoliu</span>
                 </a>
             </div>
         </div>

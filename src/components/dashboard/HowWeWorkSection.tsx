@@ -6,48 +6,48 @@ import EmailIcon from "/public/icons/dashboard/hero/email.svg"
 
 export default function HowWeWorkSection() {
   return (
-    <section id="cum-lucram" className="py-16 lg:py-24">
-      <div className="text-center">
-        <p className="text-sm font-semibold italic text-[#171E29] leading-relaxed opacity-70 mx-auto text-center px-4">SIMPLU, RAPID ȘI TRANSPARENT</p>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          <span className="text-black font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[42px]">CUM</span>
-          <span className="bg-[linear-gradient(to_right,#588AFF_15%,#C2E0FF_90%)] bg-clip-text text-transparent font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[42px]"> LUCRĂM?</span>
+    <section id="cum-lucram" className="py-2 lg:py-4">
+      <div className="text-center flex flex-col items-center justify-center gap-[3px]">
+        <p className="text-[11px] font-medium italic text-[#1D2633] leading-[12px] mx-auto text-center font-jetbrains-mono">SIMPLU, RAPID ȘI TRANSPARENT</p>
+        <h2 className="max-w-[430px] w-full text-center flex flex-row items-center justify-center gap-2 leading-12 font-extrabold text-[40.52px] bg-gradient-to-r from-[#588AFF]/90 from-[41%] to-white/60 to-[100%] bg-clip-text text-transparent">
+          <span className="text-[#292D36]">CUM</span>
+          <span className=""> LUCRĂM?</span>
         </h2>
       </div>
       
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-10 my-10">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-x-2 lg:gap-5 mt-6 mb-12">
 
-        <div className="w-full max-w-[306px] lg:w-[306px] h-[422px] flex flex-col gap-2">
+        <div className="w-full max-w-[306px] lg:w-[306px] h-[422px] flex flex-col gap-2 p-[10px]">
           <div className="bg-white h-[280px] rounded-[10px] flex items-center justify-center">
-            <Image src="/images/how-we-work/1.png" alt="How We Work" className="w-full h-auto" width={574} height={561} />
+            <Image src="/images/how-we-work/1.png" alt="How We Work" className="w-full h-full" width={574} height={561} />
           </div>
           <div className="flex flex-col justify-between items-center gap-2">
-            <p className="text-black text-xs font-extrabold">Pasul 1</p>
-            <p className="text-black text-[15px] font-medium">Programăm un apel gratuit</p>
+            <p className="text-black text-xs font-extrabold font-jetbrains-mono">Pasul 1</p>
+            <p className="text-[#292D36] text-[15px] font-medium font-inter">Programăm un apel gratuit</p>
           </div>
-          <p className="text-[#1d26337a] font-normal text-[15px] text-center">Discutăm despre afacerea ta și găsim soluția potrivită pentru buget și obiective.</p>
+          <p className="text-[#1D2633] font-normal text-[13.71px] text-center leading-[21px] tracking-[0.15px]">Discutăm despre afacerea ta și găsim soluția potrivită pentru buget și obiective.</p>
         </div>
 
-        <div className="w-full max-w-[306px] lg:w-[306px] h-[422px] flex flex-col gap-2">
+        <div className="w-full max-w-[306px] lg:w-[306px] h-[422px] flex flex-col gap-2 p-[10px]">
           <div className="bg-white h-[280px] rounded-[10px] flex items-center justify-center">
-            <Image src="/images/how-we-work/2.png" alt="How We Work" className="w-full h-auto" width={574} height={561} />
+            <Image src="/images/how-we-work/2.png" alt="How We Work" className="w-full h-full" width={574} height={561} />
           </div>
           <div className="flex flex-col justify-between items-center gap-2">
-            <p className="text-black text-xs font-extrabold">Pasul 2</p>
-            <p className="text-black text-[15px] font-medium">Alocăm echipa potrivită</p>
+            <p className="text-black text-xs font-extrabold font-jetbrains-mono">Pasul 2</p>
+            <p className="text-[#292D36] text-[15px] font-medium font-inter">Alocăm echipa potrivită</p>
           </div>
-          <p className="text-[#1d26337a] font-normal text-[15px] text-center">O echipă dedicată se ocupă de proiect, ca tu să te concentrezi pe business.</p>
+          <p className="text-[#1D2633] font-normal text-[13.71px] text-center leading-[21px] tracking-[0.15px]">O echipă dedicată se ocupă de proiect, ca tu să te concentrezi pe business.</p>
         </div>
 
-        <div className="w-full max-w-[306px] lg:w-[306px] h-[422px] flex flex-col gap-2">
+        <div className="w-full max-w-[306px] lg:w-[306px] h-[422px] flex flex-col gap-2 p-[10px]">
           <div className="bg-white h-[280px] rounded-[10px] flex items-center justify-center">
-            <Image src="/images/how-we-work/3.png" alt="How We Work" className="w-full h-auto" width={574} height={561} />
+            <Image src="/images/how-we-work/3.png" alt="How We Work" className="w-full h-full" width={574} height={561} />
           </div>
           <div className="flex flex-col justify-between items-center gap-2">
-            <p className="text-black text-xs font-extrabold">Pasul 3</p>
-            <p className="text-black text-[15px] font-medium">Livrăm și optimizăm</p>
+            <p className="text-black text-xs font-extrabold font-jetbrains-mono">Pasul 3</p>
+            <p className="text-[#292D36] text-[15px] font-medium font-inter">Livrăm și optimizăm</p>
           </div>
-          <p className="text-[#1d26337a] font-normal text-[15px] text-center">Vezi progresul constant și primești livrările la timp, fără bătăi de cap.</p>
+          <p className="text-[#1D2633] font-normal text-[13.71px] text-center leading-[21px] tracking-[0.15px]">Vezi progresul constant și primești livrările la timp, fără bătăi de cap.</p>
         </div>
 
       </div>
@@ -55,7 +55,7 @@ export default function HowWeWorkSection() {
       <div className="w-full flex justify-center">
         <a
           href="#cerere-oferta"
-          className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"
+          className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold font-inter text-[15px] flex items-center justify-center gap-1"
         > 
           <EmailIcon className="w-[23px] h-[22px]" />
           Cerere Ofertă

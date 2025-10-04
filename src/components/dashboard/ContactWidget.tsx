@@ -20,7 +20,7 @@ export default function ContactWidget() {
     <div className="fixed bottom-6 right-6 z-50 space-y-3 flex flex-col items-end">
       {/* WhatsApp */}
       <div className="cursor-pointer flex flex-row justify-center items-center gap-1">
-        <span className="font-semibold text-sm text-black shadow-[inset_0px_0px_10px_0px_#28DD43] rounded-full p-2 bg-white">Scrie-ne pe WhatsApp</span>
+        <span className="font-semibold text-[13.23px] text-black font-inter shadow-[inset_0px_0px_10px_0px_#28DD43] rounded-full p-2 bg-white leading-4 tracking-[0.2px]">Scrie-ne pe WhatsApp</span>
         <div className="relative">
           <div className="w-12 h-12 overflow-hidden">
             <WhatsappIcon className="absolute top-[-12px] left-[-12px]" />
@@ -31,12 +31,12 @@ export default function ContactWidget() {
         </div>
       </div>
 
-      <a href="tel:0722XXXXXX" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1">
+      <a href="tel:0722XXXXXX" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-[13.23px] font-inter leading-4 tracking-[0.2px] flex items-center justify-center gap-1">
         <PhoneIcon className="w-[29px] h-[26px]" />
         0722 XXX XXX
       </a>
       
-      <a href="#cerere-oferta" onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')} className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-sm flex items-center justify-center gap-1"> 
+      <a href="#cerere-oferta" onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')} className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-[15px] font-inter flex items-center justify-center gap-1"> 
         <EmailIcon className="w-[23px] h-[22px]" />
         Cerere Ofertă
       </a>

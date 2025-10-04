@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, JetBrains_Mono, Konkhmer_Sleokchher } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +11,30 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+});
+
+const konkhmerSleokchher = Konkhmer_Sleokchher({
+  variable: "--font-konkhmer-sleokchher",
+  subsets: ["khmer"],
+  weight: "400",
+});
+
+// Semantic font - using system fonts for semantic typography
+const semanticFont = {
+  variable: "--font-semantic",
+  style: {
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+  },
+};
 
 export const metadata: Metadata = {
   title: "TAGBYTE",
@@ -25,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${jetbrainsMono.variable} ${konkhmerSleokchher.variable} ${semanticFont.variable} antialiased`}
       >
         {children}
       </body>

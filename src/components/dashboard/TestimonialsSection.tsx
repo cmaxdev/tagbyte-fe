@@ -11,13 +11,14 @@ import CakeIconSm from "/public/icons/dashboard/testimonials/cake.svg"
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-8 lg:py-12 mb-8 w-full">
-      <div className="text-center mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          <span className="text-gray-900">EXPERIENȚE</span>
-          <span className="bg-[linear-gradient(to_right,#588AFF_20%,#C2E0FF_80%)] bg-clip-text text-transparent"> REALE</span>
+    <section className="my-8 w-full">
+      <div className="text-center mb-16 flex flex-col items-center gap-[15px]">
+        <h2 className="max-w-[533px] w-full bg-clip-text text-transparent bg-gradient-to-r from-[#588AFF] from-[81%] to-white to-[100%] text-4xl lg:text-[51.09px] font-extrabold font-inter leading-[60px] flex justify-center">
+          <span className="text-[#292D36]">EXPERIENȚE</span>
+          &nbsp;
+          <span className=""> REALE</span>
         </h2>
-        <p className="text-sm font-medium italic text-[#171E29] leading-relaxed opacity-70 text-center px-4">
+        <p className="text-[13.59px] font-medium italic text-[#1D2633] leading-relaxed opacity-80 text-center font-inter">
           Află direct de la clienții noștri
         </p>
       </div>
@@ -32,12 +33,12 @@ export default function TestimonialsSection() {
             </div>
             
             {/* Testimonial Text */}
-            <blockquote className="text-sm sm:text-[15px] font-medium leading-[20px] sm:leading-[22px] text-gray-700 mb-4 lg:mb-6 max-w-[550px] text-center tracking-[0.2px] px-2">
-              Am <strong>analizat</strong> mai multe <strong>echipe de web design</strong> înainte să alegem și pot spune cu încredere că am făcut <strong>alegerea corectă</strong>. Site-ul livrat este <strong>modern, rapid și bine optimizat</strong>. În prima lună după lansare am observat o creștere cu <strong>30%</strong> a cererilor de ofertă și o scădere a ratei de <strong>abandon</strong>. Colaborarea a fost simplă și eficientă.
+            <blockquote className="text-[15px] font-inter font-medium leading-[22.5px] tracking-[0.2px] max-w-[563px] w-full text-[#333333] text-center">
+              Am <span className="font-bold">analizat</span> mai multe <span className="font-bold">echipe de web design</span> înainte să alegem și pot spune cu încredere că am făcut <span className="font-bold">alegerea corectă</span>. Site-ul livrat este <span className="font-bold">modern, rapid și bine optimizat</span>. În prima lună după lansare am observat o creștere cu <span className="font-bold">30%</span> a cererilor de ofertă și o scădere a ratei de <span className="font-bold">abandon</span>. Colaborarea a fost simplă și eficientă.
             </blockquote>
             
             {/* Author */}
-            <div className="flex items-center gap-3 mb-4 lg:mb-8">
+            <div className="flex items-center gap-3 my-4 lg:my-8">
               <div className="w-10 h-10 lg:w-12 lg:h-12 bg-yellow-400 rounded-full flex items-center justify-center overflow-hidden">
                 <Image src="/images/testimonials/andrei.png" alt="Andrei M." width={48} height={48} className="rounded-full w-full h-full" />
               </div>
@@ -58,7 +59,7 @@ export default function TestimonialsSection() {
               <NimIconSm className="max-w-[144px] w-full" />
             </div>
 
-            <div className="w-full h-full flex items-center justify-center bg-[#f5f5f5] border rounded-bl-3xl lg:rounded-bl-none lg:border-l-0 p-2">
+            <div className="w-full h-full flex items-center justify-center bg-white border rounded-bl-3xl lg:rounded-bl-none lg:border-l-0 p-2">
               <MorningIconSm className="max-w-[47px] w-full" />
             </div>
 

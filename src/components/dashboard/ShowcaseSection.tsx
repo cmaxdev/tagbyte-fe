@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ShowcaseSection() {
   return (
-    <section id="portofoliu" className="py-8 lg:py-12">
+    <section id="portofoliu" className="py-4 lg:py-6">
       <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-0 px-4 lg:px-0">
         {/* Left Image */}
         <div className="w-full lg:w-auto">
