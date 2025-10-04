@@ -6,6 +6,7 @@ import StripeIcon from '/public/icons/dashboard/header/stripe.svg';
 import ServiceIcon from '/public/icons/dashboard/header/service.svg';
 import ConnectIcon from '/public/icons/dashboard/header/connect.svg';
 import PortfolioIcon from '/public/icons/dashboard/header/portfolio.svg';
+import PhoneCircleIcon from '/public/icons/dashboard/hero/phone-circle.svg';
 
 export default function NavigationHeader() {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -61,11 +62,12 @@ export default function NavigationHeader() {
         </nav>
 
         {/* Mobile Center - Phone Number Only */}
-        <div className="lg:hidden flex items-center justify-center flex-1 rounded-full h-full max-h-10" style={{ background: 'linear-gradient(to bottom, #3D3D3DB3 0%, #3D3D3DB3 30%, #808080B3 70%, #808080B3 100%)' }}>
-          <a href="tel:0722XXXXXX" className="flex items-center gap-1.5 text-gray-800 hover:text-gray-600 hover:opacity-80 transition-all duration-300 relative group">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="lg:hidden flex items-center justify-center flex-1 rounded-full h-full max-h-10 " style={{ background: 'linear-gradient(to bottom, #3D3D3DB3 0%, #3D3D3DB3 30%, #808080B3 70%, #808080B3 100%)' }}>
+          <a href="tel:0722XXXXXX" className="flex items-center gap-[7px] font-inter text-[13.23px] font-semibold leading-4 text-white">
+            <svg className="w-4 h-4 hidden lg:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
+            <PhoneCircleIcon className="block lg:hidden" />
             <span className="text-sm font-semibold" style={{ fontSize: '13.23px' }}>Sună-ne: 0722 XXX XXX</span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-800 transition-all duration-300 group-hover:w-full"></div>
           </a>
