@@ -20,7 +20,8 @@ export default function NavigationHeader() {
   };
 
   return (
-    <header className="mb-8 relative flex justify-start">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-gray-200/50">
+      <div className="max-w-[960px] mx-auto py-3">
       {/* Debug info - remove this in production */}
       <div className="rounded-full h-[48px] px-2 lg:px-0 flex items-center justify-start gap-1 sm:gap-4">
         {/* Left Part - Logo */}
@@ -76,29 +77,17 @@ export default function NavigationHeader() {
           <a
             href="#cerere-oferta"
             onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')}
-            className="hidden sm:flex bg-[#000000] text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 rounded-full items-center gap-1.5 transition-all duration-300 font-semibold h-8 hover:opacity-80 hover:scale-105"
+            className="flex min-w-[152px] bg-[#000000] text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 rounded-full items-center gap-1.5 transition-all duration-300 font-semibold h-8 hover:opacity-80 hover:scale-105"
           >
             <div className="w-[22px] h-[22px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>
               <MailIcon className="w-[20px] h-[12px] text-white" />
             </div>
-            <span className="hidden md:inline font-inter font-semibold text-[15px]">Cerere Ofertă</span>
-          </a>
-
-          {/* Mobile CTA Button */}
-          <a
-            href="#cerere-oferta"
-            onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')}
-            className="sm:hidden bg-[#000000] text-white text-xs px-2 py-1 rounded-full flex items-center gap-1 transition-all duration-300 font-semibold h-8 hover:opacity-80 hover:scale-105"
-          >
-            <div className="w-[18px] h-[18px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>
-              <MailIcon className="w-[16px] h-[10px] text-white" />
-            </div>
-            <span>Cerere Ofertă</span>
+            <span className="md:inline font-inter font-semibold text-xs lg:text-[15px]">Cerere Ofertă</span>
           </a>
 
         </div>
       </div>
-
+      </div>
     </header>
   );
 }

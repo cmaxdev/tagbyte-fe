@@ -16,10 +16,11 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FFFFFFF2] pt-6 md:pt-8">
-      <div className="max-w-[960px] w-full mx-auto">
-        {/* Header */}
-        <NavigationHeader />
+    <div className="min-h-screen bg-[#FFFFFFF2]">
+      {/* Header */}
+      <NavigationHeader />
+      
+      <div className="max-w-[960px] w-full mx-auto pt-20">
         
         {/* Hero Section */}
         <HeroSection />
