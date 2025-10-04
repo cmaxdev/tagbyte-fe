@@ -75,8 +75,7 @@ export default function NavigationHeader() {
         <div className="flex items-center gap-2 flex-shrink-0">
           {/* Desktop CTA Button */}
           <a
-            href="#cerere-oferta"
-            onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')}
+            href="/contact"
             className="flex min-w-[152px] bg-[#000000] text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 rounded-full items-center gap-1.5 transition-all duration-300 font-semibold h-8 hover:opacity-80 hover:scale-105"
           >
             <div className="w-[22px] h-[22px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>

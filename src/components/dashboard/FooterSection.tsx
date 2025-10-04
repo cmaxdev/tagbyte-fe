@@ -85,9 +85,9 @@ export default function FooterSection() {
           <div className="space-y-5 text-center">
             <h3 className="text-white text-[11px] font-normal font-konkhmer-sleokchher leading-3 tracking-normal">LEGAL</h3>
             <div className="text-white text-[11px] font-medium font-jetbrains-mono leading-3 tracking-normal flex flex-col gap-[9px]">
-              <a href="#" >TERMENI SI CONDITII</a>
-              <a href="#" >POLITICA DE CONFIDENTIALITATE</a>
-              <a href="#" >POLITICA COOKIES</a>
+              <a href="/legal" className="hover:text-blue-300 transition-colors">TERMENI SI CONDITII</a>
+              <a href="/legal" className="hover:text-blue-300 transition-colors">POLITICA DE CONFIDENTIALITATE</a>
+              <a href="/legal" className="hover:text-blue-300 transition-colors">POLITICA COOKIES</a>
             </div>
           </div>
         </div>

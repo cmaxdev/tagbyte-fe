@@ -12,17 +12,6 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
           <div className="space-y-8 lg:space-y-0">
-            {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[41px] font-extrabold leading-tight">
-              <span className="text-black font-inter font-extrabold text-[42px] leading-[48.3px]">CONSTRUIM</span>
-              <br />
-              <span className="text-black font-inter font-extrabold text-[42px] leading-[48.3px]">EXPERIENȚE</span>
-              <br />
-              <span className="bg-gradient-to-b from-[#588AFF]/90 from-[64%] to-white/60 to-[100%] bg-clip-text text-transparent font-inter font-extrabold text-[42px] leading-[48.3px]">DIGITALE</span>
-              &nbsp;
-              <span className="text-black font-inter font-extrabold text-[42px] leading-[48.3px]">CARE</span>
-              &nbsp;
-              <span className="bg-gradient-to-b from-[#588AFF] from-[57%] to-white/60 to-[100%] bg-clip-text text-transparent font-inter font-extrabold text-[42px] leading-[48.3px]">VÂ ND</span>
-            </h1> */}
             <h1 className="min-h-[196px] text-[42px] font-extrabold font-inter leading-[48.3px] tracking-[-0.4px] flex flex-col justify-center items-start bg-gradient-to-b from-[#588AFF] from-[57%] to-white/60 to-[100%] bg-clip-text text-transparent">
               <span className="text-black">CONSTRUIM</span>
               <span className="text-black">EXPERIENȚE</span>
