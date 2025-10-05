@@ -63,7 +63,7 @@ export default function FooterSection() {
               <span>CODE@TAGBYTE.DEV</span>
               <span>+40 722 XXX XXX</span>
               <a href="#cerere-oferta" className="block hover:text-blue-300 transition-colors">
-                CERERE OFERTA
+              CERERE OFERTĂ
               </a>
             </div>
           </div>

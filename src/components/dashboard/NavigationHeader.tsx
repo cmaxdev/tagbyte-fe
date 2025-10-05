@@ -24,7 +24,7 @@ export default function NavigationHeader() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-gray-200/50">
       <div className="max-w-[960px] mx-auto py-3">
       {/* Debug info - remove this in production */}
-      <div className="rounded-full h-[48px] px-2 lg:px-0 flex items-center justify-start gap-1 sm:gap-4">
+      <div className="rounded-full h-[48px] px-2 lg:px-0 flex items-center justify-center gap-1 sm:gap-4">
         {/* Left Part - Logo */}
         <div className="flex items-center w-8 h-8 flex-shrink-0">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center">
@@ -83,7 +83,7 @@ export default function NavigationHeader() {
             <div className="w-[22px] h-[22px] rounded flex items-center justify-center" style={{ background: 'linear-gradient(to bottom, #1A6AE7, #20C2F4)' }}>
               <MailIcon className="w-[20px] h-[12px] text-white" />
             </div>
-            <span className="md:inline font-inter font-semibold text-xs lg:text-[15px]">Cerere Ofertă</span>
+            <span className="md:inline font-inter font-semibold text-xs lg:text-[15px]">CERERE OFERTĂ</span>
           </a>
 
         </div>

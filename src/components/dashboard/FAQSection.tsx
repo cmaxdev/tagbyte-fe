@@ -1,10 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import EmailIcon from "/public/icons/dashboard/hero/email.svg"
 import FaqIcon from '/public/icons/dashboard/faq/thinking.svg';
 
+const faqData = [
+  {
+    question: "Ce include pachetul de start pentru un website?",
+    answer: "👉 Pachetul de start include design modern, optimizare pentru mobil și SEO basic, cu livrare în max. 2 săptămâni."
+  },
+  {
+    question: "În cât timp este livrat un proiect standard?",
+    answer: "👉 Un website standard se livrează în aproximativ 2 săptămâni, iar o aplicație mobilă în 3–4 săptămâni, în funcție de complexitate."
+  },
+  {
+    question: "Oferiți și mentenanță după finalizare?",
+    answer: "👉 Da, oferim pachete de mentenanță lunară de la 30 €/lună, care includ suport tehnic, update-uri și optimizări."
+  },
+  {
+    question: "Puteți dezvolta aplicații mobile pentru iOS și Android?",
+    answer: "👉 Da, dezvoltăm aplicații native și cross-platform, compatibile atât cu iOS, cât și cu Android."
+  },
+  {
+    question: "Care este diferența între pachetul Start și Custom?",
+    answer: "👉 Pachetul Start include servicii standard la un preț fix, iar Custom este complet personalizat, cu funcționalități avansate și la cerere."
+  },
+  {
+    question: "Cum comunicăm pe parcursul proiectului?",
+    answer: "👉 Comunicăm constant prin email, telefon sau call video, iar progresul este actualizat transparent pe tot parcursul proiectului."
+  },
+  {
+    question: "Ce aveți nevoie pentru a începe colaborarea?",
+    answer: "👉 Avem nevoie de o discuție inițială pentru a înțelege nevoile tale, după care semnăm contractul și începem lucrul imediat."
+  }
+];
 
 export default function FAQSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section id="faq" className="my-8 lg:mt-[140px] lg:mb-6 px-4">
       <div className="text-center lg:text-left mb-6 gap-[9px] flex flex-col">
@@ -20,25 +56,37 @@ export default function FAQSection() {
       </div>
       
       <div className="w-full space-y-[10px] mb-8">
-        {[
-          "What happens if my project scope changes mid-way?",
-          "Can you collaborate with our in-house team?",
-          "Why not hire designers full-time?",
-          "Designme vs other contractors",
-          "How many people work on my project?",
-          "Do you work on one-offs or only subscription?",
-          "Can you handle branding, product, and website work?",
-          "What do you need to start working together?",
-          "How do you communicate and manage work?",
-          "How soon can you start?"
-        ].map((question, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-sm h-auto min-h-[56px] lg:h-14 hover:shadow-md transition-shadow cursor-pointer flex gap-3 items-center p-3 lg:p-0">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center flex-shrink-0">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.79086 6.83079H15.7909V9.37625H0.79086V6.83079ZM7.01813 0.603521H9.56359V15.6035H7.01813V0.603521Z" fill="#FF4400"/>
-              </svg>
+        {faqData.map((faq, index) => (
+          <div key={index} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div 
+              onClick={() => toggleFAQ(index)}
+              className="cursor-pointer flex gap-3 items-center p-3 lg:p-4 h-[56px]"
+            >
+              <div className="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center flex-shrink-0">
+                <svg 
+                  width="16" 
+                  height="16" 
+                  viewBox="0 0 16 16" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`transition-transform duration-200 ${openIndex === index ? 'rotate-45' : ''}`}
+                >
+                  <path d="M0.79086 6.83079H15.7909V9.37625H0.79086V6.83079ZM7.01813 0.603521H9.56359V15.6035H7.01813V0.603521Z" fill="#FF4400"/>
+                </svg>
+              </div>
+              <span className="font-inter font-medium text-base leading-4 tracking-[-0.16px] text-[#2E323D] flex-1">
+                {faq.question}
+              </span>
             </div>
-            <span className="font-inter font-medium text-base leading-4 tracking-[-0.16px] text-[#2E323D]">{question}</span>
+            {openIndex === index && (
+              <div className="px-3 lg:px-4 pb-3 lg:pb-4 pt-0">
+                <div className="ml-10 lg:ml-12">
+                  <p className="font-inter text-sm leading-5 text-[#4A5568] bg-[#F7FAFC] p-3 rounded-lg border-l-4 border-[#FF4400]">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -59,7 +107,7 @@ export default function FAQSection() {
           className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold font-inter text-[15px] flex items-center justify-center gap-1"
         > 
           <EmailIcon className="w-[23px] h-[22px]" />
-          Cerere Ofertă
+          CERERE OFERTĂ
         </a>
       </div>
     </section>

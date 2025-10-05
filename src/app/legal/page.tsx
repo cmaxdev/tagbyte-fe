@@ -1,20 +1,21 @@
 import React from 'react';
 import NavigationHeader from '@/components/dashboard/NavigationHeader';
+import FooterSection from '@/components/dashboard/FooterSection';
 
 export default function LegalPage() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* Header */}
-      <NavigationHeader />
+        <NavigationHeader />
       
-        <div className="max-w-[960px] w-full mx-auto pt-20 px-4 py-8">
+        <div className="max-w-[704px] w-full mx-auto pt-20 py-8">
             {/* Terms and Conditions */}
             <div className="my-16">
                 <h1 className="text-4xl lg:text-[42px] text-black font-semibold  leading-[48px] font-inter text-center py-8">
                     TERMENI ȘI CONDIȚII
                 </h1>
 
-                <div className="px-4 lg:px-24 text-[#171E29] text-[13.83px] font-extrabold opacity-70 font-inter italic leading-[22px] tracking-normal">
+                <div className="text-[#171E29] text-[13.83px] font-extrabold opacity-70 font-inter italic leading-[22px] tracking-normal">
                     <ul>
                         <li>1. Preambul</li>
                         <li className="flex">Acest document stabilește termenii și condițiile de utilizare a site-ului și serviciilor oferite de Ad Boost SRL (CUI: [introdu CUI], sediul social: [adresa], România). Prin accesarea site-ului, utilizatorul acceptă acești termeni.</li>
@@ -52,7 +53,7 @@ export default function LegalPage() {
             <div className="my-16">
                 <h1 className="text-4xl lg:text-[42px] text-black font-semibold  leading-[48px] font-inter text-center uppercase pt-32 pb-12">Politica de cookies</h1>
 
-                <div className="px-4 lg:px-24 text-[#171E29] text-[13.83px] font-extrabold opacity-70 font-inter italic leading-[22px] tracking-normal">
+                <div className="text-[#171E29] text-[13.83px] font-extrabold opacity-70 font-inter italic leading-[22px] tracking-normal">
                     <ul>
                         <li>1. Ce sunt cookie-urile Cookie-urile sunt fișiere mici stocate pe dispozitivul tău în timpul navigării pe site.</li>
                         <li>2. Tipuri de cookie-uri</li>
@@ -77,7 +78,7 @@ export default function LegalPage() {
             <div className="my-16">
                 <h1 className="text-4xl lg:text-[42px] text-black font-semibold  leading-[48px] font-inter text-center uppercase pt-32 pb-12">Politica de confidențialitate</h1>
 
-                <div className="px-4 lg:px-24 text-[#171E29] text-[13.83px] font-extrabold opacity-70 font-inter italic leading-[22px] tracking-normal">
+                <div className="text-[#171E29] text-[13.83px] font-extrabold opacity-70 font-inter italic leading-[22px] tracking-normal">
                     <ul>
                         <li>1. Introducere Ad Boost SRL (date sediu, contact) se angajează să protejeze datele personale ale utilizatorilor, respectând GDPR (UE) și legislația aplicabilă în SUA când este cazul.</li>
                         <li>2. Ce date colectăm</li>
@@ -114,6 +115,8 @@ export default function LegalPage() {
                 </div>
             </div>
         </div>
+
+        <FooterSection />
     </div>
   );
 }

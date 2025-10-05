@@ -34,7 +34,7 @@ export default function HeroSection() {
             </a>
             <a href="#cerere-oferta" className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold font-inter text-[15px] flex items-center justify-center gap-1"> 
               <EmailIcon className="w-[23px] h-[22px]" />
-              Cerere Ofertă
+              CERERE OFERTĂ
             </a>
           </div>
         </div>

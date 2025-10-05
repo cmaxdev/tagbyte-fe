@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import NavigationHeader from '@/components/dashboard/NavigationHeader';
+import FooterSection from '@/components/dashboard/FooterSection';
 
 import StripeIcon from '/public/icons/dashboard/header/stripe.svg';
 import EmailIcon from '/public/icons/dashboard/hero/email.svg';
@@ -45,12 +46,12 @@ export default function ContactPage() {
       {/* Header */}
       <NavigationHeader />
       
-      <div className="max-w-7xl mx-auto pt-20 px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+      <div className="max-w-7xl mx-auto py-32 px-4">
+        <div className="flex flex-col justify-center">
           
-          {/* Left Panel - Contact Form */}
-          <div className={`transition-all duration-500 ${isSubmitted ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-            <div className="max-w-md mx-auto lg:mx-0">
+          {/* Contact Form */}
+          <div className={`transition-all duration-500 ${isSubmitted ? 'opacity-0 pointer-events-none hidden' : 'opacity-100'}`}>
+            <div className="max-w-md mx-auto">
               {/* Title */}
               <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 font-inter">
                 Hai să colaborăm
@@ -163,9 +164,9 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right Panel - Confirmation Message */}
-          <div className={`transition-all duration-500 ${isSubmitted ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-            <div className="max-w-md mx-auto lg:mx-0">
+          {/* Confirmation Message */}
+          <div className={`transition-all duration-500 ${isSubmitted ? 'opacity-100' : 'opacity-0 pointer-events-none hidden'}`}>
+            <div className="max-w-md mx-auto">
               {/* Title */}
               <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 font-inter">
                 Solicitarea a fost înregistrată
@@ -190,6 +191,9 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+
+      <FooterSection />
+
     </div>
   );
 }
