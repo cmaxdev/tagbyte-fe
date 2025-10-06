@@ -36,7 +36,7 @@ export default function ContactWidget() {
         0722 XXX XXX
       </a>
       
-      <a href="#cerere-oferta" onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')} className="w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-[15px] font-inter flex items-center justify-center gap-1"> 
+      <a href="#cerere-oferta" onClick={(e) => handleSmoothScroll(e, 'cerere-oferta')} className="px-2 min-w-[145px] bg-black rounded-full h-[34px] text-white font-semibold text-[15px] font-inter flex items-center justify-center gap-1"> 
         <EmailIcon className="w-[23px] h-[22px]" />
         CERERE OFERTĂ
       </a>
